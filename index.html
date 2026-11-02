@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Under Construction</title>
+  <style>
+    /* Microsoft Fluent Design Inspired CSS */
+    :root {
+      --ms-blue: #0078d4;
+      --ms-dark-blue: #005a9e;
+      --ms-bg: #f3f3f3;
+      --ms-card-bg: #ffffff;
+      --ms-text: #242424;
+      --ms-text-secondary: #616161;
+      --ms-red: #f25022;
+      --ms-green: #7fba00;
+      --ms-yellow: #ffb900;
+      --ms-sky-blue: #00a4ef;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
+      background-color: var(--ms-bg);
+      color: var(--ms-text);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    /* Container Card with Fluent Mica/Acrylic Card Style */
+    .card {
+      background-color: var(--ms-card-bg);
+      border-radius: 12px;
+      padding: 48px 32px;
+      max-width: 540px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12), 0 4px 12px rgba(0, 0, 0, 0.06);
+    }
+
+    /* Iconic Microsoft 4-Color Grid */
+    .ms-logo {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 4px;
+      width: 48px;
+      height: 48px;
+      margin: 0 auto 32px auto;
+    }
+
+    .ms-logo div {
+      border-radius: 2px;
+    }
+
+    .ms-logo .square-red { background-color: var(--ms-red); }
+    .ms-logo .square-green { background-color: var(--ms-green); }
+    .ms-logo .square-blue { background-color: var(--ms-sky-blue); }
+    .ms-logo .square-yellow { background-color: var(--ms-yellow); }
+
+    /* Typography */
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 600;
+      color: var(--ms-text);
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+
+    p {
+      font-size: 1.05rem;
+      color: var(--ms-text-secondary);
+      line-height: 1.6;
+    }
+
+    /* Fluent Accent Bar */
+    .accent-bar {
+      height: 4px;
+      width: 60px;
+      background: var(--ms-blue);
+      margin: 28px auto 0 auto;
+      border-radius: 2px;
+    }
+
+    /* Responsive adjustment for small screens */
+    @media (max-width: 480px) {
+      .card {
+        padding: 32px 20px;
+      }
+
+      h1 {
+        font-size: 1.4rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <!-- Microsoft Logo -->
+    <div class="ms-logo" aria-hidden="true">
+      <div class="square-red"></div>
+      <div class="square-green"></div>
+      <div class="square-blue"></div>
+      <div class="square-yellow"></div>
+    </div>
+
+    <!-- Main Content -->
+    <h1>Hello Microsoft People!</h1>
+    <p>I am still working on my project, so no peeking!</p>
+
+    <!-- Visual Accent -->
+    <div class="accent-bar"></div>
+  </div>
+
+</body>
+</html>
